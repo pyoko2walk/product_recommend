@@ -1,0 +1,17 @@
+cd product_recommend
+* python -m venv env
+env\scripts\activate.bat
+* pip install -r requirements_windows.txt
+* https://github.com/pyoko2walk/product_recommend.git
+git clone https://github.com/pyoko2walk/product_recommend.git
+streamlit run main.py
+Ctrl + C で停止
+
+
+■　手順1のプロンプト
+添付のCSVファイルに下記の仕様で列を1列追加して、CSVファイルで返してください。
+列名：stock_status
+値：あり　残りわずか　なし　の3つのいずれか
+値の決定方法：他の列の情報をもとに決定してください。他の列の情報をもとに決定できない場合はランダムに決定してください。
+
+※元のファイルの名前は products.csv.back に変更して保存
